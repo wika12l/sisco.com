@@ -1,162 +1,785 @@
 body{
     width: 100%;
+    height: 30cm;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+#expandedImg{
     height: 100%;
-    font-family: sans-serif;
-    margin: 0;
-    background-image: url(ce30bf1c460c84c948eb0c23996753d2.jpg);
+    width: 100%;
 }
-.heard{
-    
-    border: 6px solid rgb(78, 80, 92);
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 20px;
-    border-style: groove;
-    width: 7.5cm;
-    height: 15cm;
-    background-color: rgb(15, 87, 196);
-    box-shadow: 1px 3px 30px 0px rgb(36, 36, 36);
-}
-.st{
-    width: 5cm;
-    height: 0.5cm;
-    margin: auto;
-    background-color: black;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-.tit{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    padding-top: 2cm;
-    padding-left: 15px;
-    font-family: Franklin Gothic Heavy;
-}
-.inpa{
-    margin-left: 17px;
-    margin-top: 0.7cm;  
-}
-.inph{
-    margin-left: 17px;
-    margin-top: 0.5cm;  
-    
-}
-.name{
-    padding-left: 90px;
-    color: whitesmoke;
-    padding-top: 0.5cm;
-}
-.name a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 10px;
-}
-.thanak{
-    text-align: center;
-    padding-top: 0.8cm;
-    color: whitesmoke;
-}
-.bot{
-    margin-top: 3.895cm;
-    width: 100%cm;
-    height: 1cm;
-    
-    background-color: black;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-}
-.cont{
-    color: whitesmoke;
-    float: left;
-    font-size: 25px;
-    padding-top: 7px;
-    padding-left: 32px;
-}
-.logo{
-    box-shadow: -0.3px 0.4px 20px rgb(83, 83, 83);
-    margin: auto;
-    margin-top: 45%;
-    width: 1.6cm;
-    height: 1.6cm;
-    border-radius: 50px;
-    background-color: whitesmoke;
-}
-.tex{
-    color: rgb(7, 109, 243);
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
-    border-radius: 50%;   
-    padding-top: 9px;
-    font-family:Franklin Gothic Heavy;
-}
-.pic1{
-    float: left;
-    margin-left: 1cm;   
-}
-.pic2{
-    float: left;
-    margin-left: 1cm;
-}
-.pic3{
-    float: left;
-    margin-left: 1cm;
-}
-.all{
-    margin-left: 3.4cm;
-}
-.pic1 .heard{
-    
-    border: 6px solid rgb(78, 80, 92);
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 20px;
-    border-style: groove;
-    width: 7.5cm;
-    height: 15cm;
-    background-color: rgb(196, 15, 166);
-    box-shadow: 1px 3px 30px 0px rgb(36, 36, 36);
-}
-.pic2 .heard{
-    
-    border: 6px solid rgb(78, 80, 92);
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 20px;
-    border-style: groove;
-    width: 7.5cm;
-    height: 15cm;
-    background-color: rgb(184, 196, 15);
-    box-shadow: 1px 3px 30px 0px rgb(36, 36, 36);
-}
-.menu {
-    float: left;
-}
-ul{
-    list-style: none;
-    padding-left: 10px;
-}
- ul li{
-    margin-top: 19px; 
-    text-align: center;
-    width: 2cm;
-    font-size: 10px;
-    height: 20px;
-}
- ul li a{
-  text-decoration: none;
-  color: rgb(228, 228, 228);
-  text-transform: uppercase;
-}
-ul li ul li{
+#m3{
+    letter-spacing: 1px;
     display: none;
 }
-ul li:hover ul li{
-    display:inline-flex;
+
+#head{
+    float: left;
+    width: 100%;
+    height: 1.5cm;
+    top: 0;
+    position: sticky;
 }
-.menu a:active{
+#head-width{
+    float: left;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    width: 75%;
+    height: 100%;
+    background-color: rgb(14, 13, 13);
+}
+#logo{
+    float: left;
+    height: 1.5cm;
+    margin-left: 1.5cm;
+    width: 1.5cm;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+#img1{
+    float: left;
+    height: 80%;
+    width: 80%;
+    margin-top: 0px;
+    margin-left: -12px;
+}
+#img2{
+    display: none;
+    float: left;
+    height: 28%;
+    width: 40%;
+    margin-top: 17px;
+    cursor: pointer;
+    margin-left: -12px;
+}
+#menu{
+    float: left;
+    margin-left: 18px;
+    height: 100%;
+    width: 50%;
+}
+#menu ul{
+    height: 100%;
+    padding-left: 0;
+}
+#menu ul li{
+    display: inline;
+    list-style: none;
+}
+#menu ul li a{
+    width: 2.2cm;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    font-size:18px;
+    margin-top: 0px;
+    padding-top: 15px;
+}
+#menu ul li a:hover{
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+}
+#x1{
+    float: right;
+    width: 0.4cm;
+    cursor: pointer;
+    height: 0.4cm;
+    margin-top: 22px;
+    margin-right: 15px;
+}
+#xx{
+    display: none;
+    float: right;
+    width: 0.4cm;
+    cursor: pointer;
+    height: 0.4cm;
+    margin-top: 22px;
+    margin-right: 15px;
+}
+#sell img{
+    float: right;
+    cursor: pointer;
+    margin-right: 1.5cm;
+    width: 0.5cm;
+    height: 0.5cm;
+    margin-top: 20px;
+}
+#bsearch{
+    display: none;
+    width: 100%; height: 1cm; position: absolute;
+}
+#ss{
+    width: 75%;float: left;
+}
+#filter{
+    float: right; height: 100%; width: 8cm; margin-right:2cm;
+    margin-top: -1.5cm;
+    border-radius: 20px;
+    padding-left: 10px;
+    outline: none;
+}
+#content{
+    float: left;
+    width: 100%;
+    height: 10cm;
+}
+#contentsong{
+    display: none;
+    float: left;
+    width: 100%;
+    height: 10cm;
+}
+#content2{
+    float: left;
+    display: none;
+    width: 100%;
+    height: 10cm;
+}
+#content3{
+    float: left;
+    display: none;
+    width: 100%;
+    height: 10cm;
+}
+#closebtn{
+    float: right;
+    position: absolute;
+    height: 0.6cm;
+    width: 0.6cm;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#closebtn:hover{
+    transition: 0.3s;
+    background-color: red;
+}
+#content-width{
+    float: left;
+    width: 75%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px 5px 10px 1px #000000;
+    box-shadow: inset 0px 10px 100px 50px #000000;
+    background-color: rgb(4, 5, 5);
+}
+#banner{
+    margin: auto;
+    width: 85%;
+    background-color: rgb(6, 7, 6);
+    height: 100%;
+}
+#bannersong{
+    display: none;
+    margin: auto;
+    width: 85%;
+    background-color: rgb(6, 7, 6);
+    height: 100%;
+}
+#carouselExampleControls{
+    margin: auto;
+    width: 85%;
+    background-color: rgb(6, 7, 6);
+    height: 100%;
+}
+.mySlides {
+    display: none;
+  
+}
+.myslides{
+    float:left;
+    margin-top: 2.5%;
+    width: 100%;
+    height: 90%;
+}
+.youtube_video{
+    float:left;
+    margin-top: 2.5%;
+    width: 100%;
+    height: 90%;
+}
+.polo{
+    display: none;
+}
+#hovertop p{
+    float: left;
+    margin-top: -43.29%;
+    width: 85%;
     color: white;
+    font-size: 35px;
+    margin-left: 7.5%;
+    padding-left: 30px;
+    font-family: Brandish;
+    -webkit-box-shadow: inset 0px 5px 10px 1px #000000;
+    box-shadow: inset 0px 15px 70px 45px #000000;
+    background-color: transparent;
+    height: 90%;
 }
-ul li a:hover{
-    color: rgb(223, 134, 0);
+#hovertop p:hover{
+    background: rgb(0, 0, 0, 0.4);
+    transition: 0.6s;
+    color: rgb(255, 196, 0);
+    text-align: center;
+}
+#prev{
+  float: left;
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -30%;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+}
+#next{
+  float: right;
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -30%;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+}
+
+#prev:hover,
+#next:hover {
+  color: yellow;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#tophover{
+    float: left;
+    width: 666px;
+    height: 100%;
+    background-color:transparent;
+    margin-top: -47.5%;
+    -webkit-box-shadow: inset 0px 5px 10px 1px #000000;
+    box-shadow: inset 0px 10px 100px 50px #000000;
+}
+#tophover:hover p{
+    color: rgb(255, 187, 0);
+    background: rgb(0, 0, 0, 0.4);
+    transition: 0.7s;
+}
+#tophover:hover h3{
+    color: rgb(255, 187, 0);
+    transition: 0.7s;
+}
+#tophover h3{
+    float: right;
+    cursor: pointer;
+    margin-top:-8%;
+    margin-right: 20px;
+    font-family: Brandish;
+    color: rgb(255, 0, 0);
+}
+#top{
+    float: left;
+    width: 100%;
+    height: 1cm;
+    margin-top: 0px;
+}
+#top1{
+    top: 11.5cm;
+    position: sticky;
+    display: none;
+    float: left;
+    width: 100%;
+    height: 1cm;
+    margin-top: 0px;
+}
+#top-width{
+    float: left;
+    width: 75%;
+    height: 100%;
+    background:rgb(0, 0, 0, 1);
+}
+#top-width img{
+    float: left;
+    height: 100%;
+    width: 3.5cm;
+}
+#top-song{
+    float: left;
+    height: 100%;
+    width: 3cm;
+    color: white;
+    margin-left: -3.2cm;
+    font-family: Brandish;
+    padding-top: 5px;
+}
+#top-song1{
+    float: left;
+    height: 100%;
+    width: 3cm;
+    color: white;
+    margin-left: -3.2cm;
+    font-family: Brandish;
+    padding-top: 5px;
+}
+#top-re{
+    float: right;
+    width: 24.2%;
+    height: 100%;
+}
+#top-re img{
+    float: left;
+    height: 100%;
+    width: 3.5cm;
+}
+#top-song-re{
+    float: left;
+    height: 100%;
+    width: 3cm;
+    color: white;
+    margin-left: -3.2cm;
+    font-family: Brandish;
+    padding-top: 5px;
+}
+
+#content-chil1{
+    float: left;
+    width: 100%;
+    height: 7.5cm;
+}
+#content-chil1-width{
+    float: left;
+    width: 75%;
+    height: 100%;
+    overflow-x: auto;
+    background-color: rgb(255, 255, 255);
+}
+#content-chil1-width::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 8px rgb(255, 255, 255);
+	background-color: #ffffff;
+}
+#content-chil1-width::-webkit-scrollbar
+{
+    height: 6px;
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#content-chil1-width::-webkit-scrollbar-thumb
+{
+	background-color: #525050;
+}
+#block{
+    float: left;
+    width: 45cm;
+    height: 100%;
+}
+#allvd1{
+    float: left;
+    width:11.2cm;
+    height: 100%;
+    border-top: 7px solid white;
+    background-color: white;
+}
+#vd1{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 83%;
+    border-right: 8px solid white;
+}
+#title1{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 0cm;
+    margin-top: -6cm;
+    border-right: 9px solid white;
+}
+#p1{
+    float: right;
+    width: 3.5cm;
+    margin-top: 49%;
+    padding-left: 10px;
+    color: white;
+    padding-right: 10px;
+    background-color: goldenrod;
+}
+#hover{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 6cm;
+    margin-top: -68.2%;
+    border-right: 10px solid white;
+}
+.hover{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 6cm;
+    margin-top: -68.2%;
+    border-right: 10px solid white;
+}
+#pp{
+    float: left;
+    width: 0cm;
+    height: 100%;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 10px;
+    color: transparent;
+    padding-right: 10px;
+}
+.pp{
+    float: left;
+    width: 0cm;
+    height: 100%;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 10px;
+    color: transparent;
+    padding-right: 10px;
+}
+#txyel{
+    font-size: 60px;
+    color: transparent;
+}
+#hover:hover p{
+    width: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    transition: 0.6s;
+}
+#hover:hover p{
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+#hover:hover #txyel{
+    color: rgb(255, 238, 0);
+    transition: 0.5s;
+}
+
+.hover:hover p{
+    width: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    transition: 0.6s;
+}
+.hover:hover p{
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+.hover:hover #txyel{
+    color: rgb(255, 238, 0);
+    transition: 0.5s;
+}
+#title2 p{
+    float: left;
+    width: 100%;
+    height: 1.2cm;
+    cursor: pointer;
+    font-size: 11px;
+    border-right: 10px solid white;
+    padding-left: 10px;
+    padding-top: 8px;
+    font-family: Khmer Unicode F1;
+    background-color: transparent;
+}
+#title2 p:hover{
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+
+
+
+#recomment-width{
+    float: right;
+    width: 24.2%;
+    height: 1.5cm;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    background-color: rgb(14, 13, 13);
+}
+#re-tit{
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+
+}
+#re1{
+    display: none;
+    float:right;
+    width: 24.2%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgb(146, 7, 7);
+}
+#re1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 8px rgb(255, 255, 255);
+	background-color: #ffffff;
+}
+#re1::-webkit-scrollbar
+{
+    height: 6px;
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#re1::-webkit-scrollbar-thumb
+{
+	background-color: #525050;
+}
+#block-re{
+    float: left;
+    width: 100%;
+    height: 150%;
+}
+#row{
+    float: left;
+    border-top: 1px solid gray;
+    border-top-style: ridge;
+    height: 1.495cm;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#box{
+    float:left;
+    height: 100%;
+    width:30%;
+    background-color: brown;
+}
+#box img{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#title-re p{
+    float: left;
+    height: 100%;
+    width: 70%;
+    color: rgb(6, 8, 8);
+    cursor: pointer;
+    font-size: 10px;
+    padding-top: 5px;
+    font-family: Kh Koulen;
+    padding-left: 10px;
+}
+#title-re p:hover{
+    color: red;
+    transition: 0.5s;
+    background: rgb(0, 0, 0, 0.3);
+}
+#ad img{
+    float: right;
+    width: 24%;
+    box-shadow: 0px 1px 3px gray;
+    height: 6cm;
+    margin-right: 0.13%;
+}
+#ad0 img{
+    float: right;
+    width: 24%;
+    box-shadow: 0px 1px 3px gray;
+    height: 3.8cm;
+    margin-right: 0.13%;
+}
+@media (max-width:1199.5px){
+#top1{
+    top: 9.8cm;
+}
+#block{
+    width: 40cm;
+    height: 100%;
+}
+#allvd1{
+    width:9.36cm;
+    height: 100%;
+    background-color: white;
+}
+#content, #content2{
+    height: 8.37cm;
+}
+#m1, #m2{
+    display: none;
+}
+#m3{
+    display: block;
+}
+#hovertop p{
+    margin-top: -43.305%;
+}
+#p1{
+    margin-top: 55%;
+}
+}
+@media (max-width:991.5px){
+#content, #content2{
+    height: 8.28cm;
+}
+#ss{
+    width: 100%;
+}
+#top1{
+    top: 9.7cm;
+}
+#top-width{
+    width: 100%;
+}
+#content-width{
+    width: 100%;
+}
+#head-width{
+    width: 100%;
+}
+#recomment-width{
+    display: none;
+}
+#m4{
+    display: none;
+}
+#ad{
+    display: none;
+}
+#top-re{
+    display: none;
+}
+
+#content-chil1-width{
+    width: 100%;
+}
+#block{
+    width: 40.8cm;
+    background-color: rgb(255, 196, 0);
+}
+#allvd1{
+    width: 9.25cm;
+}
+#title1{
+    margin-top: -6cm;
+}
+#p1{
+    margin-top: 202.5px;
+    background-color: red;
+}
+#hovertop p{
+    margin-top: -43.305%;
+}
+}
+@media (max-width:767.5px){
+#content, #content2{
+    height: 8.125cm;
+}
+#top1{
+    top: 9.61cm;
+}
+#expandedImg{
+    height: 100%;
+}
+#closebtn{
+    float: left;
+    margin-left: -30px;
+    margin-top: 20%;
+    position: absolute;
+}
+#content-chil1{
+    height: 6cm;
+}
+#block{
+    width: 40.8cm;
+    background-color: rgb(255, 196, 0);
+}
+#allvd1{
+    width: 6.8cm;
+}
+#vd1{
+    height: 80%;
+    border-right:9px solid white;
+}
+#title1{
+    border: none;
+}
+#title2 p{
+    border: none;
+    height: 20%;
+}
+#prev, #next{
+    font-size: 20px;
+    margin-top: -30%;
+}
+#menu{
+    display: none;
+}
+#img2{
+    display:block;
+}
+#img1{
+    display: none;
+}
+.myslides{
+    margin-top: 0;
+    height: 100%;
+}
+#banner{
+    width: 100%;
+}
+#hovertop p{
+    width: auto;
+    display: none;
+    background-color: red;
+}
+.ma{
+    max-width: 1200px;
+}
+}
+@media (max-width:540px){
+#allvd1{
+    width: 6.9cm;
+}
+}
+@media (max-width:500px){
+#content, #content2{
+    height: 5.5cm;
+}
+#top1{
+    top: 7cm;
+}
+}
+@media (max-width:414px){
+#logo{
+    margin-left: 0px;
+}
+#sell img{
+    margin-right: 30px;
+}
+#img2{
+    margin-left: 30px;
+}
+}
+@media (max-width:360px){
+#content, #content2{
+    height: 4cm;
+}
+#top1{
+    top: 5.5cm;
+}
+#prev{
+   padding-left:3px ;
+}
+#next{
+    padding-right:3px ;
+ }
+}
+@media (max-width:300px){
+#prev, #next{
+    margin-top: -3cm;
+}
 }
